@@ -2,9 +2,9 @@
     <div class="row">
         <div class="col-sm-2 vh-100 bg-light">
             <nav class="navbar h-100 d-flex flex-column p-3">
+                <a class="navbar-brand mb-2" href="#">CSMS</a>
 
                 <ul class="navbar-nav w-100">
-                    <a class="navbar-brand mb-2" href="#">CSMS</a>
                     <li class="nav-item">
                         <a class="nav-link active" href="{{ route('dashboard') }}">Dashboard</a>
                     </li>
@@ -12,7 +12,7 @@
                         <a class="nav-link" href="{{ route('archive') }}">Archive</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ route(name: 'statistics') }}">Statistiques</a>
+                        <a class="nav-link" href="{{ route('statistics') }}">Statistiques</a>
                     </li>
                 </ul>
 
@@ -25,8 +25,21 @@
             </nav>
         </div>
 
-        <div class="col-sm-10">
-            @yield('main')
+        <div class="col-sm-10 p-0">
+            <nav class="navbar navbar-expand-lg navbar-light px-4">
+                <div class="container-fluid">
+                    <div class="align-items-center ms-auto">
+                        <button type="button" class="btn btn-light mx-2">
+                            <i class="bi bi-bell"></i>
+                        </button>
+                        <img src="{{asset('images/profile.jpeg')}}" alt="Profile" class="rounded-circle" width="40"
+                            height="40">
+                    </div>
+                </div>
+            </nav>
+            <div class="p-4">
+                @yield('main')
+            </div>
         </div>
 
     </div>

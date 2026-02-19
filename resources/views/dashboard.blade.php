@@ -5,8 +5,56 @@
 @endsection
 
 @section('main')
-    <div>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum dolores facilis aspernatur, cumque explicabo
-        eius velit quod debitis eos mollitia natus officia nemo minus molestias incidunt commodi porro? Velit, quia?
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                           b
+                        </h5>
+                         <p>
+                                tttt
+                            </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                          b 
+                        </h5>
+                         <p>
+                                tttt
+                            </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                          b 
+                        </h5>
+                         <p>
+                                tttt
+                            </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                          b 
+                        </h5>
+                         <p>
+                                tttt
+                            </p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 @endsection
