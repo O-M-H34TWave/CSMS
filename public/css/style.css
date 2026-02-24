@@ -1,0 +1,26 @@
+.nav-item:hover {
+    background-color: cornsilk;
+    color: black;
+}
+.nav-item {
+    font-size: large;
+    /* padding-left: 15px; */
+    /* padding-right: 5px; */
+    transition: all 0.5s ease-in-out;
+}
+.nav-link,
+.navbar-brand {
+    color: white;
+}
+
+.bi-speedometer2,
+.bi-file-earmark-zip,
+.bi-bar-chart,
+.bi-gear {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.navbar-brand{
+    font-size: 30px;
+}
+
