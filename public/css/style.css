@@ -24,3 +24,12 @@
     font-size: 30px;
 }
 
+.left-card{
+    padding: 20px;
+    /* border: 1px solid gray; */
+    border: 1px solid #e9ecef;
+    border-top: 0;
+}
+
+
+
