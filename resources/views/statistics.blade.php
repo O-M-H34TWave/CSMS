@@ -10,7 +10,7 @@
 
         <div class="dropdown text-end">
             <button type="button" class="btn btn-success dropdown-toggle" data-bs-toggle="dropdown">
-             <i class="bi bi-plus-circle"></i>   اضافة
+                <i class="bi bi-plus-circle"></i> اضافة
             </button>
             <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="#">ولادة</a></li>
@@ -75,4 +75,98 @@
             </div>
 
         </div>
+        <div class="mt-5 mb-5">
+
+
+            <div style="display: flex; gap: 50px; justify-content: center; flex-wrap: wrap;">
+                <div class="chart-container" style="width: 500px;">
+                    <canvas id="birthChart"></canvas>
+                </div>
+                <div class="chart-container" style="width: 500px;">
+                    <canvas id="deathChart"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script>
+        // Months of the year
+        const months = ['Jan', 'Fev', 'Mar'];
+
+        // Sample data for demonstration (replace with real data)
+        const maleBirths = months.map(() => Math.floor(Math.random() * 300));
+        const femaleBirths = months.map(() => Math.floor(Math.random() * 300));
+        const maleDeaths = months.map(() => Math.floor(Math.random() * 100));
+        const femaleDeaths = months.map(() => Math.floor(Math.random() * 100));
+
+        // --- Births Chart ---
+        const birthCtx = document.getElementById('birthChart').getContext('2d');
+        new Chart(birthCtx, {
+            type: 'bar',
+            data: {
+                labels: months,
+                datasets: [
+                    {
+                        label: 'ذكور',
+                        data: maleBirths,
+                        backgroundColor: 'blue',
+                        stack: 'births'
+                    },
+                    {
+                        label: 'اناث',
+                        data: femaleBirths,
+                        backgroundColor: 'pink',
+                        stack: 'births'
+                    }
+                ]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: { position: 'top' },
+                    title: { display: true, text: 'الولادات الشهرية 2026' }
+                },
+                scales: {
+                    x: { stacked: true },
+                    y: { stacked: true, beginAtZero: true }
+                }
+            }
+        });
+
+        // --- Deaths Chart ---
+        const deathCtx = document.getElementById('deathChart').getContext('2d');
+        new Chart(deathCtx, {
+            type: 'bar',
+            data: {
+                labels: months,
+                datasets: [
+                    {
+                        label: 'ذكور',
+                        data: maleDeaths,
+                        backgroundColor: 'darkred',
+                        stack: 'deaths'
+                    },
+                    {
+                        label: 'اناث',
+                        data: femaleDeaths,
+                        backgroundColor: 'lightcoral',
+                        stack: 'deaths'
+                    }
+                ]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: { position: 'top' },
+                    title: { display: true, text: 'الوفيات الشهرية 2026' }
+                },
+                scales: {
+                    x: { stacked: true },
+                    y: { stacked: true, beginAtZero: true }
+                }
+            }
+        });
+    </script>
 @endsection
