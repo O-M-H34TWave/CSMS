@@ -19,7 +19,7 @@
         </div>
         <div class="row">
             <div class="col-md-9">
-                <table class="table">
+                <table class="table table-bordered">
                     <thead class="thead-dark">
                         <tr>
                             <th scope="col">#</th>
