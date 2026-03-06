@@ -6,26 +6,14 @@
 
 @section('main')
     <div class="container">
-        <h3 class="text-center mb-4">الارشيف</h3>
-        <div>
-            <div class="row">
-                <div class="col-md-4">
-                    <form class="d-flex mb-4">
-                        <input class="form-control me-2 w-100" type="search" placeholder="بحث..." aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">بحث</button>
-                    </form>
-                </div>
-            </div>
-        </div>
         <div class="row">
             <div class="col-md-9 mt-2">
                 <table class="table table-bordered" style="width: 100%">
                     <thead>
-                        <tr >
-                            <th style="width: 10%" >رقم التصريح</th>
+                        <tr>
+                            <th style="width: 10%">رقم التصريح</th>
                             <th style="width: 10%">رقم الرسم</th>
                             <th style="width: 20%">الاسم</th>
-                            <th style="width: 10%">نوع</th>
                             <th style="width: 15%">تاريخ التصريح</th>
                             <th></th>
                         </tr>
@@ -33,52 +21,36 @@
                             <th>30</th>
                             <th>23</th>
                             <td>احمد البجكوري</td>
-                            <td><b>وفاة</b></td>
                             <td>05/03/2026</td>
                             <td>
                                 <button class="btn btn-info btn-sm" type="button">عرض </button>
-                                
+
                                 <button class="btn btn-success btn-sm" type="button">تعديل</button>
                                 <button class="btn btn-danger btn-sm" type="button">حذف</button>
                             </td>
                         </tr>
-                        <tr class="table-success">
+                        <tr class="table-danger">
 
                             <th>69</th>
                             <th>67</th>
-                            <td>احمد البجكوري</td>
-                            <td><b>ولادة</b></td>
+                            <td>حميد البوزياني</td>
                             <td>02/03/2026</td>
                             <td>
                                 <button class="btn btn-info btn-sm" type="button">عرض </button>
-                                
+
                                 <button class="btn btn-success btn-sm" type="button">تعديل</button>
                                 <button class="btn btn-danger btn-sm" type="button">حذف</button>
                             </td>
                         </tr>
-                        <tr class="table-success">
+                        <tr class="table-danger">
 
                             <th>68</th>
                             <th>66</th>
                             <td>احمد البجكوري</td>
-                            <td><b>ولادة</b></td>
                             <td>26/02/2026</td>
                             <td>
                                 <button class="btn btn-info btn-sm" type="button">عرض </button>
-                                
-                                <button class="btn btn-success btn-sm" type="button">تعديل</button>
-                                <button class="btn btn-danger btn-sm" type="button">حذف</button>
-                            </td>
-                        </tr>
-                        <tr class="table-success">
-                            <th>70</th>
-                            <th>67</th>
-                            <td>احمد البجكوري</td>
-                            <td><b>ولادة</b></td>
-                            <td>10/02/2026</td>
-                            <td>
-                                <button class="btn btn-info btn-sm" type="button">عرض </button>
-                                
+
                                 <button class="btn btn-success btn-sm" type="button">تعديل</button>
                                 <button class="btn btn-danger btn-sm" type="button">حذف</button>
                             </td>
@@ -87,7 +59,18 @@
                             <th>70</th>
                             <th>67</th>
                             <td>احمد البجكوري</td>
-                            <td><b>وفاة</b></td>
+                            <td>10/02/2026</td>
+                            <td>
+                                <button class="btn btn-info btn-sm" type="button">عرض </button>
+
+                                <button class="btn btn-success btn-sm" type="button">تعديل</button>
+                                <button class="btn btn-danger btn-sm" type="button">حذف</button>
+                            </td>
+                        </tr>
+                        <tr class="table-danger">
+                            <th>70</th>
+                            <th>67</th>
+                            <td>احمد البجكوري</td>
                             <td>09/02/2026</td>
                             <td>
                                 <button class="btn btn-info btn-sm" type="button">عرض </button>
@@ -100,11 +83,10 @@
                             <th>70</th>
                             <th>67</th>
                             <td>احمد البجكوري</td>
-                            <td><b>وفاة</b></td>
                             <td>05/02/2026</td>
-                            <td class="w-25">
+                            <td>
                                 <button class="btn btn-info btn-sm" type="button">عرض </button>
-                                
+
                                 <button class="btn btn-success btn-sm" type="button">تعديل</button>
                                 <button class="btn btn-danger btn-sm" type="button">حذف</button>
                             </td>
@@ -158,33 +140,10 @@
             </div>
 
         </div>
-        <ul class="pagination justify-content-center text-end">
-            <li class="page-item disabled"><a class="page-link" href="#">السابق</a></li>
-            <li class="page-item"><a class="page-link" href="#">1</a></li>
-            <li class="page-item"><a class="page-link" href="#">2</a></li>
-            <li class="page-item"><a class="page-link" href="#">3</a></li>
-            <li class="page-item"><a class="page-link" href="#">التالي</a></li>
-        </ul>
+       
     </div>
 
-    <script>
-        const range = document.getElementById('range');
-        const output = document.getElementById('rangeValue');
 
-        const categories = [
-            "0–5",
-            "6–11",
-            "12–14",
-            "15–17"
-        ];
 
-        function updateRange() {
-            output.textContent = categories[range.value];
-        }
-
-        range.addEventListener('input', updateRange);
-
-        updateRange();
-    </script>
 
 @endsection

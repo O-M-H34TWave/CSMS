@@ -26,10 +26,10 @@
                                     <small><a class="nav-link" href="{{ route('archive') }}">الكل</a></small>
                                 </li>
                                 <li class="nav-item">
-                                    <small><a class="nav-link" href="">ارشيف الولادات</a></small>
+                                    <small><a class="nav-link" href="{{route('births-archive')}}">ارشيف الولادات</a></small>
                                 </li>
                                 <li class="nav-item">
-                                    <small><a class="nav-link" href="">ارشيف الوفيات</a></small>
+                                    <small><a class="nav-link" href="{{route('deaths-archive')}}">ارشيف الوفيات</a></small>
                                 </li>
                                
                             </ul>
