@@ -6,6 +6,10 @@
 
 @section('main')
     <div class="container">
+        <div class="text-center mt-2 mb-5">
+
+            <h3>ارشيف الوفيات</h3>
+        </div>
         <div class="row">
             <div class="col-md-9 mt-2">
                 <table class="table table-bordered" style="width: 100%">
@@ -74,7 +78,6 @@
                             <td>09/02/2026</td>
                             <td>
                                 <button class="btn btn-info btn-sm" type="button">عرض </button>
-
                                 <button class="btn btn-success btn-sm" type="button">تعديل</button>
                                 <button class="btn btn-danger btn-sm" type="button">حذف</button>
                             </td>
@@ -86,7 +89,6 @@
                             <td>05/02/2026</td>
                             <td>
                                 <button class="btn btn-info btn-sm" type="button">عرض </button>
-
                                 <button class="btn btn-success btn-sm" type="button">تعديل</button>
                                 <button class="btn btn-danger btn-sm" type="button">حذف</button>
                             </td>
@@ -96,9 +98,9 @@
                 </table>
             </div>
             <div class="col-md-3 left-card" dir="ltr">
-                <label for="range" class="form-label">الفئة العمرية للمولود</label>
-                <input type="range" class="form-range" min="0" max="3" step="1" id="range">
-                <output for="range" id="rangeValue" aria-hidden="true"></output>
+                <label for="range2" class="form-label">الفئة العمرية للمتوفي</label>
+                <input type="range" class="form-range" min="0" max="20" step="1" id="range2">
+                <output for="range2" id="rangeValue2" aria-hidden="true"></output>
                 <div class="border-top pt-3 mt-3 mb-2" dir="rtl">
                     <label for="">سنة الولادة</label>
                     <select class="form-select" name="" id="">
@@ -111,6 +113,16 @@
                         <option value="6">2014</option>
                         <option value="7">2015</option>
                         <option value="8">2016</option>
+                        <option value="8">2017</option>
+                        <option value="8">2018</option>
+                        <option value="8">2019</option>
+                        <option value="8">2020</option>
+                        <option value="8">2021</option>
+                        <option value="8">2022</option>
+                        <option value="8">2023</option>
+                        <option value="8">2024</option>
+                        <option value="8">2025</option>
+                        <option value="8">2026</option>
                     </select>
                 </div>
                 <div class="form-check border-top pt-3 mt-3 mb-2" dir="rtl">
@@ -128,14 +140,17 @@
                 <div class="form-check border-top pt-3 mt-3 mb-2" dir="rtl">
                     <input class="form-check-input" type="checkbox" id="naissances">
                     <label class="form-check-label" for="naissances">
-                        <b>ولادات</b>
+                        <b>وفيات</b>
                     </label>
                 </div>
                 <div class="form-check" dir="rtl">
                     <input class="form-check-input" type="checkbox" id="deci_naissances">
                     <label class="form-check-label" for="deci_naissances">
-                        <b>احكام ولادات</b>
+                        <b>احكام وفيات</b>
                     </label>
+                </div>
+                <div class="text-center mt-3">
+                    <button type="button" class="btn btn-success">بحث</button>
                 </div>
             </div>
 

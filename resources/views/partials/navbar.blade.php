@@ -13,7 +13,7 @@
                             <!-- Main clickable link -->
                             <a class="nav-link flex-grow-1" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#archiveSubmenu" aria-expanded="false" aria-controls="archiveSubmenu">
-                                <i class="bi bi-bar-chart"></i> ارشيف 
+                                <i class="bi bi-file-earmark-zip"></i> ارشيف 
                             </a>
                             <!-- Chevron button to toggle submenu -->
 

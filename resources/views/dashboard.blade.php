@@ -65,7 +65,7 @@
         </div>
         <div class="row g-4 mt-1 justify-content-md-center">
             <div class="col-md-3 totalCard">
-                <a href="#" class="link-underline link-underline-opacity-0">
+                <a href="{{route('births-archive')}}" class="link-underline link-underline-opacity-0">
                     <div class="card h-100 rounded-3 totalCard">
                         <div class="card-body d-flex flex-column bg-info bg-gradient rounded-3">
                             <h5 class="card-title text-light">عدد الولادات في الارشيف
@@ -80,7 +80,7 @@
 
             </div>
             <div class="col-md-3 ">
-                <a href="#" class="link-underline link-underline-opacity-0 totalCard">
+                <a href="{{route('deaths-archive')}}" class="link-underline link-underline-opacity-0 totalCard">
                     <div class="card h-100 rounded-3 ">
                         <div class="card-body d-flex flex-column bg-dark bg-gradient rounded-3">
                             <h5 class="card-title text-light">عدد الوفيات في الارشيف

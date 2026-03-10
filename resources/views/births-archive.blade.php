@@ -6,6 +6,10 @@
 
 @section('main')
     <div class="container">
+        <div class="text-center mt-2 mb-5">
+
+            <h3>ارشيف الولادات</h3>
+        </div>
         <div class="row">
             <div class="col-md-9 mt-2">
                 <table class="table table-bordered" style="width: 100%">
@@ -111,6 +115,16 @@
                         <option value="6">2014</option>
                         <option value="7">2015</option>
                         <option value="8">2016</option>
+                        <option value="8">2017</option>
+                        <option value="8">2018</option>
+                        <option value="8">2019</option>
+                        <option value="8">2020</option>
+                        <option value="8">2021</option>
+                        <option value="8">2022</option>
+                        <option value="8">2023</option>
+                        <option value="8">2024</option>
+                        <option value="8">2025</option>
+                        <option value="8">2026</option>
                     </select>
                 </div>
                 <div class="form-check border-top pt-3 mt-3 mb-2" dir="rtl">
@@ -136,6 +150,9 @@
                     <label class="form-check-label" for="deci_naissances">
                         <b>احكام ولادات</b>
                     </label>
+                </div>
+                <div class="text-center mt-3">
+                    <button type="button" class="btn btn-success">بحث</button>
                 </div>
             </div>
 

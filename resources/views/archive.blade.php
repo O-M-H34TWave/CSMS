@@ -21,8 +21,8 @@
             <div class="col-md-9 mt-2">
                 <table class="table table-bordered" style="width: 100%">
                     <thead>
-                        <tr >
-                            <th style="width: 10%" >رقم التصريح</th>
+                        <tr>
+                            <th style="width: 10%">رقم التصريح</th>
                             <th style="width: 10%">رقم الرسم</th>
                             <th style="width: 20%">الاسم</th>
                             <th style="width: 10%">نوع</th>
@@ -37,7 +37,7 @@
                             <td>05/03/2026</td>
                             <td>
                                 <button class="btn btn-info btn-sm" type="button">عرض </button>
-                                
+
                                 <button class="btn btn-success btn-sm" type="button">تعديل</button>
                                 <button class="btn btn-danger btn-sm" type="button">حذف</button>
                             </td>
@@ -51,7 +51,7 @@
                             <td>02/03/2026</td>
                             <td>
                                 <button class="btn btn-info btn-sm" type="button">عرض </button>
-                                
+
                                 <button class="btn btn-success btn-sm" type="button">تعديل</button>
                                 <button class="btn btn-danger btn-sm" type="button">حذف</button>
                             </td>
@@ -65,7 +65,7 @@
                             <td>26/02/2026</td>
                             <td>
                                 <button class="btn btn-info btn-sm" type="button">عرض </button>
-                                
+
                                 <button class="btn btn-success btn-sm" type="button">تعديل</button>
                                 <button class="btn btn-danger btn-sm" type="button">حذف</button>
                             </td>
@@ -78,7 +78,7 @@
                             <td>10/02/2026</td>
                             <td>
                                 <button class="btn btn-info btn-sm" type="button">عرض </button>
-                                
+
                                 <button class="btn btn-success btn-sm" type="button">تعديل</button>
                                 <button class="btn btn-danger btn-sm" type="button">حذف</button>
                             </td>
@@ -104,7 +104,7 @@
                             <td>05/02/2026</td>
                             <td class="w-25">
                                 <button class="btn btn-info btn-sm" type="button">عرض </button>
-                                
+
                                 <button class="btn btn-success btn-sm" type="button">تعديل</button>
                                 <button class="btn btn-danger btn-sm" type="button">حذف</button>
                             </td>
@@ -183,6 +183,27 @@
         }
 
         range.addEventListener('input', updateRange);
+
+        updateRange();
+
+
+        const range2 = document.getElementById('range2');
+        const output2 = document.getElementById('rangeValue2');
+
+        const categories2 = [
+             "مولود ميت",
+            "اقل من سنة",
+            "4-1",
+            "9-5"
+            "14-10",
+            "19-15"
+        ];
+
+        function updateRange2() {
+            output.textContent = categories2[range.value];
+        }
+
+        range.addEventListener('input2', updateRange2);
 
         updateRange();
     </script>
