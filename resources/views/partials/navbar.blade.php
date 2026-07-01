@@ -10,16 +10,13 @@
                     </li>
                     <li class="nav-item d-flex flex-column">
                         <div class="d-flex justify-content-between align-items-center">
-                            <!-- Main clickable link -->
                             <a class="nav-link flex-grow-1" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#archiveSubmenu" aria-expanded="false" aria-controls="archiveSubmenu">
                                 <i class="bi bi-file-earmark-zip"></i> ارشيف 
                             </a>
-                            <!-- Chevron button to toggle submenu -->
 
                         </div>
 
-                        <!-- Collapsible submenu -->
                         <div class="collapse" id="archiveSubmenu">
                             <ul class="nav flex-column ms-3">
                                 <li class="nav-item">
@@ -37,30 +34,25 @@
                     </li>
                     <li class="nav-item d-flex flex-column">
                         <div class="d-flex justify-content-between align-items-center">
-                            <!-- Main clickable link -->
                             <a class="nav-link flex-grow-1" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#statsSubmenu" aria-expanded="false" aria-controls="statsSubmenu">
                                 <i class="bi bi-bar-chart"></i> إحصائيات
                             </a>
-                            <!-- Chevron button to toggle submenu -->
 
                         </div>
 
-                        <!-- Collapsible submenu -->
                         <div class="collapse" id="statsSubmenu">
                             <ul class="nav flex-column ms-3">
                                 <li class="nav-item">
                                     <small><a class="nav-link" href="{{ route('statistics') }}">إحصائيات عامة</a></small>
                                 </li>
                                 <li class="nav-item">
-                                    <small><a class="nav-link" href="{{ route('statistics') }}">ولادات</a></small>
+                                    <small><a class="nav-link" href="{{ route('births-statistics') }}">ولادات</a></small>
                                 </li>
                                 <li class="nav-item">
                                     <small><a class="nav-link" href="{{ route('statistics') }}">وفيات</a></small>
                                 </li>
-                                <li class="nav-item">
-                                    <small><a class="nav-link" href="{{ route('statistics') }}">ولادات</a></small>
-                                </li>
+                                
                             </ul>
                         </div>
                     </li>

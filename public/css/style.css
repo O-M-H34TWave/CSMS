@@ -1,11 +1,10 @@
-
-
 .nav-item {
     font-size: large;
     transition: all 0.5s ease-in-out;
 }
 
-#archiveSubmenu, #statsSubmenu{
+#archiveSubmenu,
+#statsSubmenu {
     position: relative;
     right: 10px;
 }
@@ -14,7 +13,7 @@
     color: white;
 }
 
-.nav-link:hover{
+.nav-link:hover {
     color: aquamarine;
 }
 
@@ -25,15 +24,37 @@
     padding-right: 15px;
     padding-left: 15px;
 }
-.navbar-brand{
+.navbar-brand {
     font-size: 30px;
 }
 
-.left-card{
+.left-card {
     padding: 20px;
     /* border: 1px solid gray; */
     border: 1px solid #e9ecef;
     border-top: 0;
 }
 
-
+#births-today {
+    background-color: rgba(25, 135, 84, 1);
+    transition: filter 0.4s ease;
+}
+#birth-dec {
+    background-color: rgba(13, 110, 253, 1);
+    transition: filter 0.4s ease;
+}
+#births-month {
+    background-color: rgb(20, 104, 65);
+    transition: filter 0.4s ease;
+}
+#dec-birth-month {
+    background-color: rgb(11, 84, 194);
+    transition: filter 0.4s ease;
+}
+#births-today:hover,
+#birth-dec:hover,
+#births-month:hover,
+#dec-birth-month:hover {
+    filter: brightness(1.2);
+    cursor: pointer;
+}

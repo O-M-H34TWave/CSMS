@@ -14,6 +14,10 @@ Route::get('/statistics', function () {
     return view('statistics');
 })->name('statistics');
 
+Route::get('/births-statistics', function () {
+    return view('births-statistics');
+})->name('births-statistics');
+
 Route::get('/archive/deaths-archive', function () {
     return view('deaths-archive');
 })->name('deaths-archive');

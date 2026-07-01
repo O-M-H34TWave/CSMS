@@ -96,10 +96,7 @@
             </div>
         </div>
 
-        <div class="row mt-3 mb-3 justify-content-center">
-            @include('partials.births-chart')
-            @include('partials.deaths-chart')
-        </div>
+       
 
         <div class="col-md-6">
             <div class="card h-100">
@@ -141,82 +138,5 @@
 
     </div>
 
-    <script>
-        // Months of the year
-        const months = ['Jan', 'Fev', 'Mar'];
-
-        // Sample data for demonstration (replace with real data)
-        const maleBirths = months.map(() => Math.floor(Math.random() * 100));
-        const femaleBirths = months.map(() => Math.floor(Math.random() * 100));
-        const maleDeaths = months.map(() => Math.floor(Math.random() * 30));
-        const femaleDeaths = months.map(() => Math.floor(Math.random() * 30));
-
-        // --- Births Chart ---
-        const birthCtx = document.getElementById('birthChart').getContext('2d');
-        new Chart(birthCtx, {
-            type: 'bar',
-            data: {
-                labels: months,
-                datasets: [
-                    {
-                        label: 'ذكور',
-                        data: maleBirths,
-                        backgroundColor: '#198754',
-                        stack: 'births'
-                    },
-                    {
-                        label: 'اناث',
-                        data: femaleBirths,
-                        backgroundColor: 'pink',
-                        stack: 'births'
-                    }
-                ]
-            },
-            options: {
-                responsive: true,
-                plugins: {
-                    legend: { position: 'top' },
-                    title: { display: true, text: 'الولادات الشهرية 2026' }
-                },
-                scales: {
-                    x: { stacked: true },
-                    y: { stacked: true, beginAtZero: true }
-                }
-            }
-        });
-
-        // --- Deaths Chart ---
-        const deathCtx = document.getElementById('deathChart').getContext('2d');
-        new Chart(deathCtx, {
-            type: 'bar',
-            data: {
-                labels: months,
-                datasets: [
-                    {
-                        label: 'ذكور',
-                        data: maleDeaths,
-                        backgroundColor: 'darkred',
-                        stack: 'deaths'
-                    },
-                    {
-                        label: 'اناث',
-                        data: femaleDeaths,
-                        backgroundColor: '#d63384',
-                        stack: 'deaths'
-                    }
-                ]
-            },
-            options: {
-                responsive: true,
-                plugins: {
-                    legend: { position: 'top' },
-                    title: { display: true, text: 'الوفيات الشهرية 2026' }
-                },
-                scales: {
-                    x: { stacked: true },
-                    y: { stacked: true, beginAtZero: true }
-                }
-            }
-        });
-    </script>
+    
 @endsection

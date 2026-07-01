@@ -18,7 +18,6 @@
 
     @include('partials.navbar')
 
-
 </body>
 
 </html>
